@@ -54,6 +54,14 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
         jMenuItem6 = new javax.swing.JMenuItem();
+        jMenu8 = new javax.swing.JMenu();
+        jMenuItem18 = new javax.swing.JMenuItem();
+        jMenuItem19 = new javax.swing.JMenuItem();
+        jMenuItem20 = new javax.swing.JMenuItem();
+        jMenu9 = new javax.swing.JMenu();
+        jMenuItem15 = new javax.swing.JMenuItem();
+        jMenuItem16 = new javax.swing.JMenuItem();
+        jMenuItem17 = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
         jMenuItem7 = new javax.swing.JMenuItem();
         jMenu6 = new javax.swing.JMenu();
@@ -78,7 +86,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         painelBotoes.setBackground(new java.awt.Color(0, 0, 0));
 
-        btnCliente.setIcon(new javax.swing.ImageIcon("C:\\Users\\WESLLE~1\\AppData\\Local\\Temp\\cliente.png")); // NOI18N
         btnCliente.setText("Cliente");
         btnCliente.setToolTipText("Abrir cadastro de Clientes");
         btnCliente.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -89,7 +96,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnProduto.setIcon(new javax.swing.ImageIcon("C:\\Users\\WESLLE~1\\AppData\\Local\\Temp\\compras.png")); // NOI18N
         btnProduto.setText("Produto");
         btnProduto.setToolTipText("Abrir Cadastro de Produtos");
         btnProduto.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -100,8 +106,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnPedido.setIcon(new javax.swing.ImageIcon("C:\\Users\\WESLLE~1\\AppData\\Local\\Temp\\prancheta.png")); // NOI18N
-        btnPedido.setText("Pedido");
+        btnPedido.setText("Servico");
         btnPedido.setToolTipText("Abrir Novo Pedido");
         btnPedido.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnPedido.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -111,7 +116,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnSair.setIcon(new javax.swing.ImageIcon("C:\\Users\\WESLLE~1\\AppData\\Local\\Temp\\erro.png")); // NOI18N
         btnSair.setText("Sair");
         btnSair.setToolTipText("Sair do Sistema");
         btnSair.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -139,21 +143,16 @@ public class TelaPrincipal extends javax.swing.JFrame {
         );
         painelBotoesLayout.setVerticalGroup(
             painelBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(painelBotoesLayout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painelBotoesLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(painelBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painelBotoesLayout.createSequentialGroup()
-                        .addGroup(painelBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btnCliente, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(painelBotoesLayout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(btnProduto, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(29, 29, 29))
+                .addGroup(painelBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btnSair, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnPedido, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnCliente, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(painelBotoesLayout.createSequentialGroup()
-                        .addGroup(painelBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnPedido)
-                            .addComponent(btnSair))
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btnProduto, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(29, 29, 29))
         );
 
         desktopPrincipal.setBackground(new java.awt.Color(153, 153, 153));
@@ -200,6 +199,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu4.setText("Consulta");
 
         jMenuItem4.setText("Clientes");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
         jMenu4.add(jMenuItem4);
 
         jMenuItem5.setText("Produtos");
@@ -214,6 +218,32 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu4.add(jMenuItem6);
 
         jMenuBar2.add(jMenu4);
+
+        jMenu8.setText("Servico");
+
+        jMenuItem18.setText("jMenuItem18");
+        jMenu8.add(jMenuItem18);
+
+        jMenuItem19.setText("jMenuItem19");
+        jMenu8.add(jMenuItem19);
+
+        jMenuItem20.setText("jMenuItem20");
+        jMenu8.add(jMenuItem20);
+
+        jMenuBar2.add(jMenu8);
+
+        jMenu9.setText("Relatorio");
+
+        jMenuItem15.setText("jMenuItem15");
+        jMenu9.add(jMenuItem15);
+
+        jMenuItem16.setText("jMenuItem16");
+        jMenu9.add(jMenuItem16);
+
+        jMenuItem17.setText("jMenuItem17");
+        jMenu9.add(jMenuItem17);
+
+        jMenuBar2.add(jMenu9);
 
         jMenu5.setText("Pedidos");
 
@@ -367,6 +397,10 @@ organizarGrade();        // TODO add your handling code here:
 fecharTodas();        // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem14ActionPerformed
 
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+ 
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -415,6 +449,8 @@ fecharTodas();        // TODO add your handling code here:
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenu jMenu6;
     private javax.swing.JMenu jMenu7;
+    private javax.swing.JMenu jMenu8;
+    private javax.swing.JMenu jMenu9;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JMenuItem jMenuItem1;
@@ -423,7 +459,13 @@ fecharTodas();        // TODO add your handling code here:
     private javax.swing.JMenuItem jMenuItem12;
     private javax.swing.JMenuItem jMenuItem13;
     private javax.swing.JMenuItem jMenuItem14;
+    private javax.swing.JMenuItem jMenuItem15;
+    private javax.swing.JMenuItem jMenuItem16;
+    private javax.swing.JMenuItem jMenuItem17;
+    private javax.swing.JMenuItem jMenuItem18;
+    private javax.swing.JMenuItem jMenuItem19;
     private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem20;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
